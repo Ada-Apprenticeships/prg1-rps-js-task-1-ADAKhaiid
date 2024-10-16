@@ -1,5 +1,5 @@
 function rockPaperScissors(player1, player2) {
-  // Both a
+  // Both players draw
   if (player1 == player2) {
     return "draw"
   } 
@@ -23,10 +23,11 @@ function rockPaperScissors(player1, player2) {
   }
   // Player 1 uses spock
   else if (player1 == "spock" && (player2 == "scissors" ||player2 == "rock")) {
-      return "player1"
+    return "player1"
   }
   // If the above statements are not found true:
-  return "player2"
+  else 
+    return "player2"
 }
 
 console.log(rockPaperScissors("lizard","rock"))
